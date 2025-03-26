@@ -1,8 +1,8 @@
-# Terminal Command Executor
+﻿# Terminal Command Executor
 
 A modern, user-friendly GUI application for executing command-line operations with real-time output display and visual feedback.
 
-![Application Screenshot](screenshot.png)
+![Application Screenshot](images/screenshot.png)
 
 ## Overview
 
@@ -61,8 +61,8 @@ git clone https://github.com/yourusername/terminal-command-executor.git
 ```
 
 2. Open the solution in Visual Studio
-3. Build the solution (F6 or Build ? Build Solution)
-4. Run the application (F5 or Debug ? Start Debugging)
+3. Build the solution (F6 or Build → Build Solution)
+4. Run the application (F5 or Debug → Start Debugging)
 
 ## Usage Examples
 
