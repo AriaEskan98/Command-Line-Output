@@ -49,10 +49,6 @@ Terminal Command Executor is a Windows desktop application built with C# and WPF
 
 ### Installation
 
-#### From Release
-1. Download the latest release ZIP file
-2. Extract to a location of your choice
-3. Run `TerminalExecutor.exe`
 
 #### Build from Source
 1. Clone the repository
@@ -101,11 +97,6 @@ The application parses command lines similarly to cmd.exe:
 - Quotes group words together but are removed from the arguments
 - Multiple spaces between arguments are collapsed
 
-### Process Execution
-Commands are executed asynchronously using `System.Diagnostics.Process`:
-- On Windows, commands are executed through cmd.exe
-- Standard output and error streams are captured separately
-- The UI is updated in real-time as output is available
 
 ### Event-Based Communication
 The application uses the Observer pattern through C# events:
@@ -127,9 +118,6 @@ The modular design makes it easy to add new features:
 2. Enhance process execution in `CommandExecutor.cs`
 3. Update the UI in `MainWindow.xaml/.cs`
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Testing
 
