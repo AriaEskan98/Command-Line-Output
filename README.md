@@ -142,11 +142,4 @@ Run tests through Visual Studio's Test Explorer or via command line:
 dotnet test
 ```
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Inspired by the need for a simpler, more visual command execution tool
-- Built with WPF for a modern UI experience

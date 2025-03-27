@@ -1,34 +1,28 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Threading.Tasks;
 
 namespace CommandLineOutput.Logic.Logic
 {
-    /// <summary>
+ 
     /// Handles the execution of shell commands
-    /// </summary>
     public class CommandExecutor
     {
-        /// <summary>
+       
         /// Event raised when output data is received
-        /// </summary>
         public event EventHandler<CommandOutputEventArgs> OutputReceived;
 
-        /// <summary>
+       
         /// Event raised when error data is received
-        /// </summary>
         public event EventHandler<CommandOutputEventArgs> ErrorReceived;
 
-        /// <summary>
+        
         /// Event raised when the process completes
-        /// </summary>
         public event EventHandler<CommandCompletedEventArgs> CommandCompleted;
 
         private Process currentProcess;
 
-        /// <summary>
-        /// Executes a command with the given arguments
-        /// </summary>
+       
+        /// Executes a command with the given arguments 
         /// <param name="command">The command to execute</param>
         /// <param name="arguments">Arguments for the command</param>
         /// <returns>A task representing the asynchronous operation</returns>
@@ -88,9 +82,8 @@ namespace CommandLineOutput.Logic.Logic
         }
     }
 
-    /// <summary>
+    
     /// Event arguments for command output
-    /// </summary>
     public class CommandOutputEventArgs : EventArgs
     {
         public string Text { get; }
@@ -101,9 +94,8 @@ namespace CommandLineOutput.Logic.Logic
         }
     }
 
-    /// <summary>
+
     /// Event arguments for command completion
-    /// </summary>
     public class CommandCompletedEventArgs : EventArgs
     {
         public int ExitCode { get; }
